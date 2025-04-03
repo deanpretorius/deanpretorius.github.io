@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journals</title>
-    <script src="journalFiles.js"></script>
     <script>
+        // Simulated list of .htm files in the /journals folder
+        const journalFiles = [
+            { title: "Writin - 03 April", file: "journals/Writin-03April.htm" }
+        ];
+
         // Function to dynamically generate the list of journals
         function generateJournalList() {
             const list = document.getElementById("journal-list");
