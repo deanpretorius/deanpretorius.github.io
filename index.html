@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <script>
+        // Simulated list of .htm files in the /journals folder
+        const journalFiles = [
+            { title: "Writin - 03 April", file: "journals/Writin-03April.htm" }
+        ];
+
+        // Function to dynamically generate the list of journals
+        function generateJournalList() {
+            const list = document.getElementById("journal-list");
+            journalFiles.forEach(journal => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = journal.file;
+                a.textContent = journal.title;
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+        }
+
+        // Generate the list when the page loads
+        window.onload = generateJournalList;
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My Personal Website</h1>
     <p>This is my personal website where I share my journals and thoughts.</p>
-    <a href="journals.html">View My Journals</a>
+    <h2>My Journals</h2>
+    <ul id="journal-list">
+        <!-- JavaScript will populate this list -->
+    </ul>
 </body>
 </html>
