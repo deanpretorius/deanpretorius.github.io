@@ -5,6 +5,7 @@ theme: minima
 # Theme settings
 minima:
   skin: dark
+  skin_variant: dark
 
 # Build settings
 markdown: kramdown
