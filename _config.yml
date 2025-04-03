@@ -1,11 +1,6 @@
 title: Dean Pretorius
 description: Welcome to my GitHub Pages site!
-theme: minima
-
-# Theme settings
-minima:
-  skin: dark
-  skin_variant: dark
+remote_theme: jekyll/minima
 
 # Build settings
 markdown: kramdown

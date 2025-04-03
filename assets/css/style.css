@@ -1,6 +1,4 @@
-@import "minima/skins/{{ site.minima.skin | default: 'dark' }}";
-@import "minima/initialize";
-
+/* Dark theme styles */
 body {
   background-color: #1a1a1a;
   color: #f0f0f0;
@@ -33,4 +31,24 @@ a {
 
 a:visited {
   color: #b366ff;
+}
+
+.site-footer {
+  background-color: #2d2d2d;
+}
+
+.footer-heading {
+  color: #f0f0f0;
+}
+
+.contact-list .p-name {
+  color: #f0f0f0;
+}
+
+.social-media-list .username {
+  color: #f0f0f0;
+}
+
+.footer-col-3 p {
+  color: #f0f0f0;
 } 
