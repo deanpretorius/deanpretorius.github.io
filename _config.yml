@@ -1,3 +1,15 @@
 title: Dean Pretorius
 description: Welcome to my GitHub Pages site!
 theme: jekyll-theme-minima
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git/

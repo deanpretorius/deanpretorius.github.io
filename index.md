@@ -1,4 +1,7 @@
-# Welcome to My GitHub Pages Site
+---
+layout: home
+title: Welcome to My GitHub Pages Site
+---
 
 This is the homepage of my site hosted at [deanpretorius.github.io](https://deanpretorius.github.io).
 
