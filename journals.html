@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journals</title>
+    <script src="journalFiles.js"></script>
+    <script>
+        // Function to dynamically generate the list of journals
+        function generateJournalList() {
+            const list = document.getElementById("journal-list");
+            journalFiles.forEach(journal => {
+                const li = document.createElement("li");
+                const a = document.createElement("a");
+                a.href = journal.file;
+                a.textContent = journal.title;
+                li.appendChild(a);
+                list.appendChild(li);
+            });
+        }
+
+        // Generate the list when the page loads
+        window.onload = generateJournalList;
+    </script>
+</head>
+<body>
+    <h1>My Journals</h1>
+    <ul id="journal-list">
+        <!-- JavaScript will populate this list -->
+    </ul>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
