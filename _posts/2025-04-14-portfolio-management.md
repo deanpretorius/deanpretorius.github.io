@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Portfolio Management 14 April 2025"
-date: 2025-04-14 09:40:00 -0400
+date: 2023-04-14 09:40:00 -0400
 categories: [portfolio]
 tags: [investing, portfolio-management]
 ---
