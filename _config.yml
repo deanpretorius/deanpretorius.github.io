@@ -10,6 +10,7 @@ minima:
 # Build settings
 markdown: kramdown
 permalink: pretty
+future: true
 
 # Exclude from processing
 exclude:
